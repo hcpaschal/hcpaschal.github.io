@@ -1,0 +1,291 @@
+@font-face {
+  font-family: 'Kanit-Regular';
+  src: url('./Kanit/Kanit-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Kanit-Thin';
+  src: url('./Kanit/Kanit-Thin.ttf') format('truetype');
+}
+
+/* Desktop Screen Styles */
+@media(min-width: 992px){
+
+html{
+	font-family: Kanit-Regular, sans-serif;;
+}
+
+body{
+
+}
+
+.main{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 25px;
+}
+
+.header{
+	flex-basis: 100%;
+
+	border-radius: 10px;
+}
+
+.header h1{
+	margin-left: 45px;
+
+	font-size: 45px;
+	opacity: 0.75;
+}
+
+.nav-bar{
+	flex-basis: 100%;
+	display: flex;
+	text-align: center;
+	
+	background-color: #5F47B3;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+	opacity: 0.9;
+}
+
+.nav-item{
+	flex-basis: 20%;
+	padding: 10px;
+}
+
+.nav-item:hover{
+	background-color: black;
+}
+
+.nav-bar a{
+	font-size: 25px;
+	color: #E6E6E6;
+	text-decoration: none;
+}
+
+.nav-bar a:hover{
+	color: white;
+}
+
+.nav-bar select{
+	width: 100%;
+	text-align: center;
+	font-family: Kanit-Regular, sans-serif;
+	font-size: 25px;
+  color: #E6E6E6;
+  text-decoration: none;
+  opacity: 0.80;
+  background-color: #5F47B3;
+  border: none;
+}
+
+.nav-bar select:hover{
+	outline: none;
+	color: white;
+	background-color: black
+}
+
+.nav-bar option{
+	color: #E6E6E6;
+}
+
+.nav-bar option:hover{
+	outline: none;
+	color: white;
+	background-color: black
+}
+
+.content{
+	flex-basis: 100%;
+	padding: 20px;
+}
+
+.content h1{
+	text-decoration: underline;
+	color: black;
+	opacity: 0.75;
+}
+
+.content p{
+	font-family: Kanit-Thin, sans-serif;
+	font-size: 18px;
+	opacity: 0.75;
+}
+
+.content img{
+	width: 250px;
+}
+
+.line{
+		background-color: #000; /* Black color for the divider */
+    height: 2px; /* Adjust the height of the divider line */
+    width: 100%; /* Full width of the container */
+    margin: 20px 0; /* Adjust the margin as needed */
+}
+
+.footer{
+	width: 90%;
+	display: flex;
+	position: fixed;
+  bottom: 0;
+
+	background-color: black;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.footer-item{
+	flex-basis: 33.3%;
+	padding: 10px;
+
+	font-size: 18px;
+	text-align: right;
+}
+
+.footer a{
+	color: white;
+	text-decoration: none;
+}
+}
+
+/* Mobile Site Styles */
+@media (min-width: 480px) and (max-width: 992px){
+
+html{
+	font-family: Kanit, sans-serif;
+}
+
+body{
+
+}
+
+.main{
+	display: flex;
+
+	flex-wrap: wrap;
+	margin: 25px;
+}
+
+.header{
+	flex-basis: 100%;
+}
+
+.header h1{
+	font-size: 50px;
+	opacity: 0.80;
+}
+
+.nav-bar{
+	flex-basis: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	
+	background-color: #5F47B3;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.nav-item{
+	flex-basis: 100%;
+	padding: 8px;
+
+}
+.nav-item:hover{
+	background-color: black;
+}
+
+.nav-bar a{
+	font-size: 25px;
+	color: #E6E6E6;
+	text-decoration: none;
+	opacity: 0.80;
+}
+
+.nav-bar a:hover{
+	color: white;
+}
+
+.nav-bar select{
+	width: 100%;
+	text-align: center;
+	font-family: Kanit-Regular, sans-serif;
+	font-size: 25px;
+  color: #E6E6E6;
+  text-decoration: none;
+  opacity: 0.80;
+  background-color: #5F47B3;
+  border: none;
+}
+
+.nav-bar select:hover{
+	outline: none;
+	color: white;
+	background-color: black
+}
+
+.nav-bar option{
+	color: #E6E6E6;
+}
+
+.nav-bar option:hover{
+	outline: none;
+	color: white;
+	background-color: black
+}
+
+.content{
+	flex-basis: 100%;
+	padding: 10px;
+}
+
+.content h1{
+	text-decoration: underline;
+}
+
+.content p{
+}
+
+.content img{
+	width: 400px;
+	align-self: center;
+}
+
+.line{
+		background-color: #000; /* Black color for the divider */
+    height: 2px; /* Adjust the height of the divider line */
+    width: 100%; /* Full width of the container */
+    margin: 20px 0; /* Adjust the margin as needed */
+}
+
+.side-bar{
+	flex-basis: -1%;
+}
+
+.footer{
+	flex-basis: 100%;
+	display: flex;
+
+	background-color: black;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.footer-item{
+	flex-basis: 33.3%;
+	padding: 10px;
+	height
+
+	font-size: 16px;
+	font-weight:700; 
+	text-align: right;
+}
+
+.footer a{
+	color: white;
+	text-decoration: none;
+}
+}
+
+
