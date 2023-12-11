@@ -150,7 +150,7 @@ body{
 }
 
 /* Mobile Site Styles */
-@media (min-width: 300px) and (max-width: 992px){
+@media (min-width: 280px) and (max-width: 992px){
 
 html{
 	font-family: Kanit, sans-serif;
